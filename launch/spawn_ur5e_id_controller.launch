@@ -18,8 +18,6 @@
         <arg name="use_sim_time" value="true"/>
         <arg name="debug" value="false"/>
         <arg name="gui" value="true"/>
-
-
         <arg name="paused" value="false"/>
     </include>   
 
@@ -30,9 +28,6 @@
     <!-- Load the controllers -->
     <rosparam command="load" file="$(find ur5e_manipulator)/config/ur5e_id_controllers.yaml" />
     
-    <!-- Load PID Gains -->
-    <rosparam file="$(find ur5e_manipulator)/config/ur5e_pid_gains.yaml" command="load"/>
-
     <!-- Load the controller manager -->
     <node name="controller_manager" pkg="controller_manager" type="controller_manager" 
           output="screen" respawn="false" />
