@@ -42,8 +42,6 @@ class UR5eHighAccSpiralCartesian:
         self.received_first_state = False
 
         # Reduced control gains for stability
-        #self.Kp = np.diag([40, 40, 45, 30, 30, 30])
-        #self.Kd = np.diag([7, 7, 7, 7, 7, 7])
         self.Kp = np.diag([90, 90, 100, 70, 70, 70])
         self.Kd = np.diag([15, 15, 15, 15, 15, 15])
         self.max_torque = 100.0
