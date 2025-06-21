@@ -45,12 +45,8 @@ class UR5eHighAccCircleCartesian:
         self.received_first_state = False
 
         # Reduced control gains for stability
-        #self.Kp = np.diag([40, 40, 45, 30, 30, 30])
-        #self.Kd = np.diag([7, 7, 7, 7, 7, 7])
         self.Kp = np.diag([80, 80, 90, 60, 60, 60])
         self.Kd = np.diag([15, 15, 15, 15, 15, 15])
-        #self.Kp = np.diag([80, 80, 90, 60, 60, 60])
-        #self.Kd = np.diag([35, 35, 35, 35, 35, 35])
         self.max_torque = 100.0
 
         # Filter params
