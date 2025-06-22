@@ -111,8 +111,9 @@ roslaunch simulation spawn_ur5e_eff_controller.launch
 
 ---
 
-### Project Structure
+## 📁 Project Structure Overview
 
+```
 ur5e_manipulator/
 ├── launch/
 ├── scripts/
@@ -122,4 +123,6 @@ ur5e_manipulator/
 ├── CMakeLists.txt
 ├── package.xml
 └── README.md
+```
 
+```
