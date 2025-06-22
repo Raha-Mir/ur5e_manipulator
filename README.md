@@ -119,7 +119,10 @@ ur5e_manipulator/
 ├── scripts/
 ├── config/
 ├── urdf/
-├── worlds/
+├── analysis/
+│   ├── plot_joint_positions.py
+│   ├── plot_trajectory_error.py
+│   └── ...
 ├── CMakeLists.txt
 ├── package.xml
 └── README.md
