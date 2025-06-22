@@ -73,17 +73,26 @@ This will start the UR5e robot in Gazebo with inverse dynamics-based control:
 roslaunch ur5e_manipulator main.launch
 ```
 
-### 2. Execute a Trajectory Using Fourier Series
+## 2. Motion Scripts
 
-Run a predefined periodic trajectory using a finite Fourier series:
+To execute specific trajectories:
 
-```bash
-rosrun ur5e_manipulator fourier_series_trajectory.py
-```
+- Position reaching:  
+  rosrun ur5e_manipulator position_reach.py
+
+- Circular trajectory:  
+  rosrun ur5e_manipulator circular.py
+
+- Spiral trajectory:  
+  rosrun ur5e_manipulator spiral.py
+
+- Fourier-based periodic motion:  
+  rosrun ur5e_manipulator fourier_series_trajectory.py
+
 
 ### 3. Launch UR5e with `ros_control`
 
-This spawns the robot with full control support:
+To launch UR5e using ros_control (effort controllers):
 
 ```bash
 roslaunch simulation spawn_ur5e_eff_controller.launch
@@ -91,4 +100,15 @@ roslaunch simulation spawn_ur5e_eff_controller.launch
 
 ---
 
+### Project Structure
+
+ur5e_manipulator/
+├── launch/
+├── scripts/
+├── config/
+├── urdf/
+├── worlds/
+├── CMakeLists.txt
+├── package.xml
+└── README.md
 
