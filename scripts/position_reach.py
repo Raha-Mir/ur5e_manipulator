@@ -10,8 +10,7 @@ import pickle
 
 class UR5eHighAccuracyID:
     def __init__(self):
-        urdf_path = Path.home() / "new_ws/src/ur5e_manipulator/urdf/ur5e_id.urdf"
-        #urdf_path = "/home/raha/new_ws/src/universal_robot/ur_description/urdf/ur5e.urdf"
+        urdf_path = Path.home() / "new_ws/src/ur5e_manipulator/urdf/my_ur5e.urdf"
         self.model = pin.buildModelFromUrdf(str(urdf_path))
         self.data = self.model.createData()
 
