@@ -111,9 +111,29 @@ roslaunch simulation spawn_ur5e_eff_controller.launch
 
 ---
 
-### 📊 Trajectory & Joint Analysis Plots (UR5e)
-
+### 📊 Analysis
 This folder contains Python scripts for visualizing and analyzing UR5e robot motion data:
+
+---
+Make sure your trajectory log files (e.g. `.pkl` or `.npz`) are located in `~/ur5e_logs/`.
+
+
+> ℹ️ **Dependencies**:
+> Make sure you have installed the following Python packages:
+> `numpy`, `matplotlib`, `scipy`, `pickle`
+
+You can install them with:
+
+```bash
+pip install numpy matplotlib scipy
+```
+
+### ▶️ Then Run
+
+```bash
+cd new_ws/src/ur5e_manipulator/analysis
+```
+
 
 ####  `3d_plot_circular.py`
 
@@ -136,22 +156,36 @@ Extends the joint viewer to also compare **desired vs. actual** trajectories.
 Displays RMSE, overshoot, and settling time per joint. Ideal for controller performance evaluation.
 
 ---
+Run the scripts with:
 
-Let me know if you'd like to add screenshots or badges for each plot too.
+```bash
+# 3D end-effector trajectory: circular
+python3 3d_plot_circular.py
+
+# 3D end-effector trajectory: spiral
+python3 3d_plot_spiral.py
+
+# Interactive joint plot (no desired trajectory required)
+python3 interactive_plot_joint_positions.py
+
+# Interactive joint error and performance viewer (requires desired trajectory)
+python3 interactive_plot_trajectory_error.py
+```
 
 ---
 ### 📁 Project Structure Overview
 
 ```
 ur5e_manipulator/
+├── analysis/
+│   ├── 3d_plot_circular.py
+│   ├── 3d_plot_spiral.py
+│   ├── interactive_plot_joint_positions.py
+│   └── interactive_plot_trajectory_error.py
 ├── launch/
 ├── scripts/
 ├── config/
 ├── urdf/
-├── analysis/
-│   ├── plot_joint_positions.py
-│   ├── plot_trajectory_error.py
-│   └── ...
 ├── CMakeLists.txt
 ├── package.xml
 └── README.md
