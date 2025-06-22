@@ -128,12 +128,12 @@ You can install them with:
 pip install numpy matplotlib scipy
 ```
 
-### ▶️ Then Run
+### ▶️ Run
 
 ```bash
 cd new_ws/src/ur5e_manipulator/analysis
 ```
-
+### ▶️ Then Run your desire script
 
 ####  `3d_plot_circular.py`
 
