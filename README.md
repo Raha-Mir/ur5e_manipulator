@@ -117,13 +117,8 @@ Use this script if you want more stable and accurate control, especially under C
 sudo -E env "PATH=$PATH" "LD_LIBRARY_PATH=$LD_LIBRARY_PATH" "PYTHONPATH=$PYTHONPATH" \
 taskset -c 2 nice -n -10 rosrun ur5e_manipulator desire_script.py
 ```
+
 **This script runs each 'desire_script' with elevated CPU priority and core binding to improve real-time performance. It uses `taskset` and `nice` to reduce latency and ensure smoother torque control on the UR5e robot (you can adjust it for systems without `sudo` or `taskset`).**
-
-
----
-
-Let me know if you want a 
-
 
 ---
 
