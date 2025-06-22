@@ -10,7 +10,7 @@ import pickle
 
 class UR5eHighAccSpiralCartesian:
     def __init__(self):
-        urdf_path = Path.home() / "new_ws/src/ur5e_manipulator/urdf/ur5e_id.urdf"
+        urdf_path = Path.home() / "new_ws/src/ur5e_manipulator/urdf/my_ur5e.urdf"
         self.model = pin.buildModelFromUrdf(str(urdf_path))
         self.data = self.model.createData()
         self.data_des = self.model.createData()
