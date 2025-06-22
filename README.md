@@ -1,6 +1,6 @@
 # UR5e Robot Motion Control
 
-This repository provides motion scripts and launch files for controlling a **UR5e robotic arm** using **ROS Noetic**. It leverages the [Pinocchio](https://stack-of-tasks.github.io/pinocchio/) library and a **Computed Torque Controller + PD Feedback**, supporting various trajectories including circular and spiral paths.
+This repository provides motion scripts and launch files for controlling a **UR5e robotic arm** using **ROS Noetic**. It leverages the [Pinocchio](https://stack-of-tasks.github.io/pinocchio/) library and a **Computed Torque Controller+PD Feedback**, supporting various trajectories including circular and spiral paths.
 
 ---
 
