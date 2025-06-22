@@ -190,15 +190,29 @@ python3 interactive_plot_trajectory_error.py
 
 ```
 ur5e_manipulator/
+├── Document/
+│   ├── presentation file
+│   └── results
 ├── analysis/
 │   ├── 3d_plot_circular.py
 │   ├── 3d_plot_spiral.py
 │   ├── interactive_plot_joint_positions.py
 │   └── interactive_plot_trajectory_error.py
-├── launch/
-├── scripts/
 ├── config/
+├── launch/
+│   ├── spawn_ur5e_eff_controller.launch
+│   └── main.launch
+├── rviz/
+│   └── rviz_ur5e.launch
 ├── urdf/
+│   ├── eef.xacro
+│   ├── my_ur5e.urdf
+│   └── my_ur5e.xacro
+├── scripts/
+│   ├── position_reach.py
+│   ├── fourier_series_trajectory.py
+│   ├── circular.py
+│   └── spiral.py
 ├── CMakeLists.txt
 ├── package.xml
 └── README.md
