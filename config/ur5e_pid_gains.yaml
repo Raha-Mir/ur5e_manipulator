@@ -1,0 +1,8 @@
+ur5e:
+  gazebo_ros_control:
+    pid_gains:
+      robotiq_85_left_knuckle_joint:
+        p: 29.5
+        i: 0.1
+        d: 0.1
+
