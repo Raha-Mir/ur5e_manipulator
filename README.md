@@ -128,7 +128,7 @@ You can install them with:
 pip install numpy matplotlib scipy
 ```
 
-###  Then Run
+### ▶️ Then Run
 
 ```bash
 cd new_ws/src/ur5e_manipulator/analysis
