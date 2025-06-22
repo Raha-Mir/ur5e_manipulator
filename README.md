@@ -218,4 +218,3 @@ ur5e_manipulator/
 └── README.md
 ```
 
-```
