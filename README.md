@@ -32,7 +32,7 @@ sudo apt update
 sudo apt install ros-noetic-gazebo-ros ros-noetic-rviz
 ```
 
-### 2. Create a Catkin Workspace
+### 1-1. Create a Catkin Workspace
 
 You can name your workspace `new_ws` (or modify it later in the launch/config files):
 
@@ -44,7 +44,7 @@ echo "source ~/new_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### 3. Clone the Repository
+### 2. Clone the Repository
 
 ```bash
 cd ~/new_ws/src
