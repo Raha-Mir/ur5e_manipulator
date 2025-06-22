@@ -73,7 +73,7 @@ This will start the UR5e robot in Gazebo with inverse dynamics-based control:
 roslaunch ur5e_manipulator main.launch
 ```
 
-## 2. Motion Scripts
+#### 2. Motion Scripts
 
 Each of the following scripts controls the UR5e robot via inverse dynamics:
 
@@ -111,7 +111,36 @@ roslaunch simulation spawn_ur5e_eff_controller.launch
 
 ---
 
-## 📁 Project Structure Overview
+### 📊 Trajectory & Joint Analysis Plots (UR5e)
+
+This folder contains Python scripts for visualizing and analyzing UR5e robot motion data:
+
+####  `3d_plot_circular.py`
+
+Visualizes the **end-effector circular trajectory** in 3D space.
+Includes actual vs. desired vs. ideal circular path with color-coded time gradient.
+
+####  `3d_plot_spiral.py`
+
+Plots a **spiral trajectory** followed by the end-effector in 3D.
+Shows smooth trajectory evolution with projection lines and color-based time progression.
+
+####  `interactive_plot_joint_positions.py`
+
+Interactive viewer for **joint-level data** (position, velocity, acceleration).
+Includes real-time sliders to adjust filtering parameters (Savitzky-Golay + Butterworth).
+
+####  `interactive_plot_trajectory_error.py`
+
+Extends the joint viewer to also compare **desired vs. actual** trajectories.
+Displays RMSE, overshoot, and settling time per joint. Ideal for controller performance evaluation.
+
+---
+
+Let me know if you'd like to add screenshots or badges for each plot too.
+
+---
+### 📁 Project Structure Overview
 
 ```
 ur5e_manipulator/
