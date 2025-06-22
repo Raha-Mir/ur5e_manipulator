@@ -130,10 +130,12 @@ pip install numpy matplotlib scipy
 
 ### ▶️ Run
 
+
 ```bash
 cd new_ws/src/ur5e_manipulator/analysis
 ```
 ### ▶️ Then Run your desire script
+
 
 ####  `3d_plot_circular.py`
 
