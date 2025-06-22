@@ -75,20 +75,31 @@ roslaunch ur5e_manipulator main.launch
 
 ## 2. Motion Scripts
 
-To execute specific trajectories:
+Each of the following scripts controls the UR5e robot via inverse dynamics:
 
-- Position reaching:  
-  rosrun ur5e_manipulator position_reach.py
+* **Position reaching**:
 
-- Circular trajectory:  
-  rosrun ur5e_manipulator circular.py
+```bash
+rosrun ur5e_manipulator position_reach.py
+```
 
-- Spiral trajectory:  
-  rosrun ur5e_manipulator spiral.py
+* **Circular trajectory**:
 
-- Fourier-based periodic motion:  
-  rosrun ur5e_manipulator fourier_series_trajectory.py
+```bash
+rosrun ur5e_manipulator circular.py
+```
 
+* **Spiral trajectory**:
+
+```bash
+rosrun ur5e_manipulator spiral.py
+```
+
+* **Fourier-based periodic trajectory**:
+
+```bash
+rosrun ur5e_manipulator fourier_series_trajectory.py
+```
 
 ### 3. Launch UR5e with `ros_control`
 
