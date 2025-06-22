@@ -128,7 +128,7 @@ You can install them with:
 pip install numpy matplotlib scipy
 ```
 
-### ▶️ Then Run
+###  Then Run
 
 ```bash
 cd new_ws/src/ur5e_manipulator/analysis
@@ -140,36 +140,36 @@ cd new_ws/src/ur5e_manipulator/analysis
 Visualizes the **end-effector circular trajectory** in 3D space.
 Includes actual vs. desired vs. ideal circular path with color-coded time gradient.
 
+```bash
+python3 3d_plot_circular.py
+```
+
 ####  `3d_plot_spiral.py`
 
 Plots a **spiral trajectory** followed by the end-effector in 3D.
 Shows smooth trajectory evolution with projection lines and color-based time progression.
+
+```bash
+python3 3d_plot_spiral.py
+```
 
 ####  `interactive_plot_joint_positions.py`
 
 Interactive viewer for **joint-level data** (position, velocity, acceleration).
 Includes real-time sliders to adjust filtering parameters (Savitzky-Golay + Butterworth).
 
+```bash
+python3 interactive_plot_joint_positions.py
+```
+
 ####  `interactive_plot_trajectory_error.py`
 
 Extends the joint viewer to also compare **desired vs. actual** trajectories.
 Displays RMSE, overshoot, and settling time per joint. Ideal for controller performance evaluation.
 
----
-Run the scripts with:
-
 ```bash
-# 3D end-effector trajectory: circular
-python3 3d_plot_circular.py
-
-# 3D end-effector trajectory: spiral
-python3 3d_plot_spiral.py
-
-# Interactive joint plot (no desired trajectory required)
-python3 interactive_plot_joint_positions.py
-
-# Interactive joint error and performance viewer (requires desired trajectory)
 python3 interactive_plot_trajectory_error.py
+
 ```
 
 ---
