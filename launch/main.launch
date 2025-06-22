@@ -3,7 +3,7 @@
 <launch>
 
     <!-- Associate to the robot description parameter, the URDF file that models the robot -->
-    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find ur5e_manipulator)/urdf/ur5e_yt.xacro" />
+    <param name="robot_description" command="$(find xacro)/xacro --inorder $(find ur5e_manipulator)/urdf/my_ur5e.xacro" />
 
     <!-- Set the position in the empty world -->
     <arg name="x" default="0.0" />
