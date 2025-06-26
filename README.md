@@ -201,6 +201,7 @@ ur5e_manipulator/
 ├── config/
 ├── launch/
 │   ├── demo.launch
+│   ├── demo_gazebo.launch
 │   ├── spawn_ur5e_eff_controller.launch
 │   └── main.launch
 ├── rviz/
