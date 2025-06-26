@@ -200,6 +200,7 @@ ur5e_manipulator/
 │   └── interactive_plot_trajectory_error.py
 ├── config/
 ├── launch/
+│   ├── demo.launch
 │   ├── spawn_ur5e_eff_controller.launch
 │   └── main.launch
 ├── rviz/
